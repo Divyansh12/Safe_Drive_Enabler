@@ -7,7 +7,7 @@
 #define SS_PIN 10
 #define RST_PIN 9
 #define LED_G 5 //define green LED pin
-#define LED_Y 8 //define White LED pin
+#define LED_B 8 //define Blue LED pin
 #define LED_R 4 //define red LED
 #define BUZZER 2 //buzzer pin
 int sensorPin = A0;
@@ -63,7 +63,7 @@ void loop()
   content.toUpperCase();
   if (content.substring(1) == "F1 BA F1 2D") 
   {
-    digitalWrite(LED_Y, HIGH);
+    digitalWrite(LED_B, HIGH);
     delay(2000);
     Serial.println("Analyse your Breath !!");
     delay(5000);
@@ -73,7 +73,7 @@ void loop()
       Serial.println();
       delay(500);
       digitalWrite(LED_G, HIGH);
-      digitalWrite(LED_Y, LOW);
+      digitalWrite(LED_B, LOW);
       tone(BUZZER, 500);
       delay(300);
       noTone(BUZZER);
@@ -85,7 +85,7 @@ void loop()
     else   {
     Serial.println(" Access denied");
     digitalWrite(LED_R, HIGH);
-     digitalWrite(LED_Y, LOW);
+     digitalWrite(LED_B, LOW);
     tone(BUZZER, 300);
     delay(1000);
     digitalWrite(LED_R, LOW);
