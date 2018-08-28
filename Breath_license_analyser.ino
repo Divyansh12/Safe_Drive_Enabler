@@ -67,7 +67,7 @@ void loop()
     delay(2000);
     Serial.println("Analyse your Breath !!");
     delay(5000);
-    if(value-50 < 100) 
+    if(value-50 < 400) 
     {
       Serial.println("Authorized access!!");
       Serial.println();
