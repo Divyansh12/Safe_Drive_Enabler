@@ -1,6 +1,6 @@
 # Safe_Drive_Enabler
 
-# Can't Drink and Drive
+## Can't Drink and Drive
 
 This repository contains all the software resources required for this project to work.
 
