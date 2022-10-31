@@ -27,7 +27,7 @@ void setup()
   pinMode(LED_R, OUTPUT);
   pinMode(BUZZER, OUTPUT);
   noTone(BUZZER);
-  Serial.println("Put your card to the reader...");
+  Serial.println("Put your card on the reader...");
   Serial.println();
 
 }
@@ -44,7 +44,7 @@ void added_setup()
   pinMode(LED_R, OUTPUT);
   pinMode(BUZZER, OUTPUT);
   noTone(BUZZER);
-  Serial.println("Put your card to the reader...");
+  Serial.println("Put your card on the reader...");
   Serial.println();
 
 }
@@ -82,7 +82,7 @@ void check_loop()
   {
     digitalWrite(LED_B, HIGH);
     delay(2000);
-    Serial.println("Analyse your Breath !!");
+    Serial.println("Please, Analyse your Breath !");
     delay(5000);
     if(value-50 < 400) 
     {
@@ -153,7 +153,7 @@ void loop()
   {
     digitalWrite(LED_B, HIGH);
     delay(2000);
-    Serial.println("Analyse your Breath !!");
+    Serial.println("Please, Analyse your Breath !");
     delay(5000);
     if(value-50 < 400) 
     {
